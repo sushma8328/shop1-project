@@ -1,0 +1,34 @@
+THIS IS HTML FAM
+<h1>shop</h1>
+
+<form action="{% url 'count' %}" method="GET">
+	<span>Name </span><input type="text" id="name" name="name" value="">
+	<span>Address </span><textarea cols="40" rows="10" name="fulltext"></textarea>
+
+	<br>
+
+	<p>gender</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="html">MALE</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="css">FEMALE</label><br>
+
+<br>
+<label for="lang">Choose a language:</label>
+  <select name="lang" id="lang">
+    <option value="english">ENGLISH</option>
+    <option value="telugu">TELUGU</option>
+    <option value="hindi">HINDI</option>
+    <option value="kannada">KANNADA</option>
+  </select>
+
+  <br>
+
+  <input type="checkbox" name="chk[]" value="Java">Java
+<br><br>
+<input type="checkbox" name="chk[]" value=".NET">.NET
+<br><br>
+<input type="checkbox" name="chk[]" value="PHP">PHP
+<br><br>
+	<input type="submit" value="Count!" />
+</form>
